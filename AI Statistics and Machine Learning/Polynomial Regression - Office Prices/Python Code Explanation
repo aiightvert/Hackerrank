@@ -1,0 +1,43 @@
+**1. Input Data Reading:**
+
+The first line of input contains two integers separated by space: features and rows.
+features denotes the number of features in each data point.
+rows denotes the number of data points.
+The subsequent rows lines contain the feature values followed by the target value for each data point.
+
+**2. Data Preparation:**
+
+Initialize empty lists X and Y to store the feature vectors and target values respectively.
+Iterate rows times to read each data point.
+For each data point:
+Read a line of input containing the feature values followed by the target value.
+Extract the feature values and append them to the list X.
+Extract the target value and append it to the list Y.
+
+**3. Feature Engineering - Polynomial Features:**
+
+Create an instance of PolynomialFeatures from scikit-learn with a polynomial degree of 3 (degree=3).
+Transform the feature vectors X using PolynomialFeatures to generate polynomial features up to the specified degree.
+Store the transformed feature vectors in poly_X.
+
+**4. Model Training:**
+
+Create an instance of LinearRegression model from scikit-learn.
+Fit the model to the transformed feature vectors poly_X and target values Y. This trains the linear regression model to learn the relationship between the polynomial features and the target values.
+
+**5. Prediction for New Data:**
+
+Read an integer new_rows from input, representing the number of new data points to predict.
+Initialize an empty list new_X to store the feature vectors of the new data points.
+Iterate new_rows times to read feature values for each new data point.
+For each new data point:
+Read a line of input containing the feature values.
+Extract the feature values and append them to the list new_X.
+Transform the feature vectors of new data points using PolynomialFeatures to generate polynomial features up to degree 3.
+Store the transformed feature vectors in poly_newX.
+
+**6. Prediction and Output:**
+
+Use the trained model to predict the target values for the new data points represented by poly_newX.
+Print each predicted target value rounded to 2 decimal places.
+That's the complete algorithm breakdown. This script essentially reads input data, trains a polynomial regression model, predicts new data points, and outputs the predictions.
