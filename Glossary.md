@@ -50,4 +50,13 @@ example ->
 
 output: Hello Ross Taylor! You just delved into python.
 
-5. 
+5. What if an immutable string needs to be transformed?
+
+example ->
+
+def mutate_string(string, position, character):
+    string_list = list(string)
+    string_list[position] = character
+    string_join = "".join(string_list)
+    
+    return string_join
