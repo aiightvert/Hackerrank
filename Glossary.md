@@ -11,6 +11,7 @@ Written By : Dennis Imanuel
             If an item has a hash value that never changes during its lifespan, it is hashable.
 
 example -> 
+
             if __name__ == '__main__':
                 n = int(input())
                 integer_list = map(int, input().split())
@@ -23,6 +24,7 @@ example ->
 3. swapcase : Make the lower case letters upper case and the upper case letters lower case
 
 example ->
+
             def swap_case(s):
                 swapped = s.swapcase()
                 return swapped
@@ -30,6 +32,7 @@ example ->
 4. split and join : We use split to get data from CSV and join to write data to CSV. In Python, we can use the function split() to split a string and join() to join a string.
 
 example ->
+
             def split_and_join(line):
                 string_split = line.split(" ")
                 string_join = "-".join(string_split)
@@ -37,6 +40,7 @@ example ->
                 return string_join
 
 example ->
+
             def print_full_name(first, last):
                 full_name = first + " " + last
                 full_name_join = "".join(full_name)+"!"
