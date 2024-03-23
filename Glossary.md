@@ -1,4 +1,4 @@
-Basic Python Glossary
+Basic Python Glossary <br>
 Written By : Dennis Imanuel
 
 1. Tuples : Tuples are used to store multiple items in a single variable.
