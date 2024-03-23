@@ -36,4 +36,14 @@ def split_and_join(line):
     
     return string_join
 
+example ->
+def print_full_name(first, last):
+    full_name = first + " " + last
+    full_name_join = "".join(full_name)+"!"
+    intro = print("Hello", full_name_join, "You just delved into python.")
+    
+    return intro
+
+output: Hello Ross Taylor! You just delved into python.
+
 5. 
