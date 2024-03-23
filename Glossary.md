@@ -60,3 +60,14 @@ example ->
                 string_join = "".join(string_list)
                 
                 return string_join
+
+6. How to count how many substrings in a string?
+
+example ->
+
+            def count_substring(string, sub_string):
+                total = 0
+                for i in range(len(string)):
+                    if string[i:len(string)].startswith(sub_string):
+                        total += 1
+                return total
