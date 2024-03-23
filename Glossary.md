@@ -54,9 +54,9 @@ output: Hello Ross Taylor! You just delved into python.
 
 example ->
 
-def mutate_string(string, position, character):
-    string_list = list(string)
-    string_list[position] = character
-    string_join = "".join(string_list)
-    
-    return string_join
+            def mutate_string(string, position, character):
+                string_list = list(string)
+                string_list[position] = character
+                string_join = "".join(string_list)
+                
+                return string_join
